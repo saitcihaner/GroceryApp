@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		83034BA127BC1D22002658FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BA027BC1D22002658FB /* AppDelegate.swift */; };
 		83034BA327BC1D22002658FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BA227BC1D22002658FB /* SceneDelegate.swift */; };
-		83034BA527BC1D22002658FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BA427BC1D22002658FB /* ViewController.swift */; };
+		83034BA527BC1D22002658FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BA427BC1D22002658FB /* LoginViewController.swift */; };
 		83034BA827BC1D22002658FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83034BA627BC1D22002658FB /* Main.storyboard */; };
 		83034BAA27BC1D23002658FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83034BA927BC1D23002658FB /* Assets.xcassets */; };
 		83034BAD27BC1D23002658FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83034BAB27BC1D23002658FB /* LaunchScreen.storyboard */; };
+		83034BB927BC4D96002658FB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BB827BC4D96002658FB /* RegisterViewController.swift */; };
+		83034BBB27BC4DA3002658FB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BBA27BC4DA3002658FB /* ForgotPasswordViewController.swift */; };
+		83034BC027BC512E002658FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83034BBF27BC512E002658FB /* Alamofire */; };
+		83034BC327BC51A6002658FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83034BC227BC51A6002658FB /* Kingfisher */; };
+		83034BC627BC52A7002658FB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 83034BC527BC52A7002658FB /* Lottie */; };
+		83034BC927BC53F8002658FB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83034BC827BC53F8002658FB /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83034B9D27BC1D22002658FB /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83034BA027BC1D22002658FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83034BA227BC1D22002658FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83034BA427BC1D22002658FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83034BA427BC1D22002658FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83034BA727BC1D22002658FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83034BA927BC1D23002658FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83034BAC27BC1D23002658FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83034BAE27BC1D23002658FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83034BB827BC4D96002658FB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		83034BBA27BC4DA3002658FB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		83034BC827BC53F8002658FB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83034BC327BC51A6002658FB /* Kingfisher in Frameworks */,
+				83034BC027BC512E002658FB /* Alamofire in Frameworks */,
+				83034BC627BC52A7002658FB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,66 @@
 		83034B9F27BC1D22002658FB /* GroceryApp */ = {
 			isa = PBXGroup;
 			children = (
-				83034BA027BC1D22002658FB /* AppDelegate.swift */,
-				83034BA227BC1D22002658FB /* SceneDelegate.swift */,
-				83034BA427BC1D22002658FB /* ViewController.swift */,
-				83034BA627BC1D22002658FB /* Main.storyboard */,
-				83034BA927BC1D23002658FB /* Assets.xcassets */,
-				83034BAB27BC1D23002658FB /* LaunchScreen.storyboard */,
+				83034BBD27BC4FF0002658FB /* Model */,
+				83034BBC27BC4FE5002658FB /* ViewModel */,
+				83034BB627BC2926002658FB /* ViewController */,
+				83034BB727BC2930002658FB /* View */,
+				83034BB527BC2911002658FB /* App */,
+				83034BB427BC2903002658FB /* Util */,
 				83034BAE27BC1D23002658FB /* Info.plist */,
 			);
 			path = GroceryApp;
+			sourceTree = "<group>";
+		};
+		83034BB427BC2903002658FB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				83034BA927BC1D23002658FB /* Assets.xcassets */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		83034BB527BC2911002658FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				83034BA027BC1D22002658FB /* AppDelegate.swift */,
+				83034BA227BC1D22002658FB /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		83034BB627BC2926002658FB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83034BA427BC1D22002658FB /* LoginViewController.swift */,
+				83034BB827BC4D96002658FB /* RegisterViewController.swift */,
+				83034BBA27BC4DA3002658FB /* ForgotPasswordViewController.swift */,
+				83034BC827BC53F8002658FB /* TabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		83034BB727BC2930002658FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83034BA627BC1D22002658FB /* Main.storyboard */,
+				83034BAB27BC1D23002658FB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83034BBC27BC4FE5002658FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83034BBD27BC4FF0002658FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,11 @@
 			dependencies = (
 			);
 			name = GroceryApp;
+			packageProductDependencies = (
+				83034BBF27BC512E002658FB /* Alamofire */,
+				83034BC227BC51A6002658FB /* Kingfisher */,
+				83034BC527BC52A7002658FB /* Lottie */,
+			);
 			productName = GroceryApp;
 			productReference = 83034B9D27BC1D22002658FB /* GroceryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,12 @@
 				Base,
 			);
 			mainGroup = 83034B9427BC1D22002658FB;
+			packageReferences = (
+				83034BBE27BC512E002658FB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				83034BC127BC51A6002658FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				83034BC427BC52A7002658FB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				83034BC727BC5322002658FB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 83034B9E27BC1D22002658FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83034BA527BC1D22002658FB /* ViewController.swift in Sources */,
+				83034BA527BC1D22002658FB /* LoginViewController.swift in Sources */,
+				83034BBB27BC4DA3002658FB /* ForgotPasswordViewController.swift in Sources */,
 				83034BA127BC1D22002658FB /* AppDelegate.swift in Sources */,
 				83034BA327BC1D22002658FB /* SceneDelegate.swift in Sources */,
+				83034BC927BC53F8002658FB /* TabBarViewController.swift in Sources */,
+				83034BB927BC4D96002658FB /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +435,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83034BBE27BC512E002658FB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		83034BC127BC51A6002658FB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		83034BC427BC52A7002658FB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		83034BC727BC5322002658FB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83034BBF27BC512E002658FB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83034BBE27BC512E002658FB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		83034BC227BC51A6002658FB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83034BC127BC51A6002658FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		83034BC527BC52A7002658FB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83034BC427BC52A7002658FB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83034B9527BC1D22002658FB /* Project object */;
 }
